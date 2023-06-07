@@ -6,7 +6,7 @@ import { navLinks } from "../../constants";
 import { logo, menu, close } from "../../assets/assets";
 
 const Navbar = () => {
-  const [active, setActive] = useState("");
+  const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -43,9 +43,8 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Thiago &nbsp;
-            <span className='sm:block hidden'> | &nbsp; Barros</span>
+          <p className='text-white text-[18px] font-bold cursor-pointer flex'>
+            Thiago <span className='sm:block hidden'> &nbsp; Barros</span>
           </p>
         </Link>
 
